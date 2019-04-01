@@ -7,13 +7,17 @@ Contestar a las preguntas en el propio readme. Cuando se pida un programa, se pu
 ## 1. Operadores Booleanos
 
 ¿Qué diferencia hay en una expresión booleana entre & y &&?
+
 ¿Y entre | y ||?
+
 Haz dos métodos booleanos que impriman algo en pantalla y un programa main que muestre la diferencia. Puedes hacer una prueba más creativa usando
 ```java
 Thread.sleep(4000);
 ```
 que recibe el número de milisegundos que espera el programa
 ¿Cuándo se usará uno u otro?
+
+
 
 ## 2. Packages
 
