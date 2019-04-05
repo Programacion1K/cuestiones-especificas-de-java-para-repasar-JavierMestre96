@@ -54,6 +54,35 @@ Indica la signatura de los siguientes métodos de la clase Math y explica para q
 ```java
 abs, max,min,pow,round
 ```
+abs - Calcula el valor absoluto de un número pasado como argumento
+public static double abs(double numero);
+public static int abs(int numero);
+public static long abs(long numero);
+public static float abs(float numero);
+
+max - Devuelve el mayor número pasado como argumento
+public static double max(double numeroUno, double numeroDos);
+public static int max(int numeroUno, int numeroDos);
+public static long max(long numeroUno, long numeroDos);
+public static float max(float numeroUno, float numeroDos);
+
+min - Devuelve el menor número pasado como argumento
+public static double min(double numeroUno, double numeroDos);
+public static int min(int numeroUno, int numeroDos);
+public static long min(long numeroUno, long numeroDos);
+public static float min(float numeroUno, float numeroDos);
+
+pow - Eleva el primer argumento al segundo, nos permite realizar potencias
+public static double pow(double numeroUno, double numeroDos);
+public static int pow(int numeroUno, int numeroDos);
+public static long pow(long numeroUno, long numeroDos);
+public static float pow(float numeroUno, float numeroDos);
+
+round - Redondea el número pasado como argumento
+public static double round(double numero);
+public static int round(int numero);
+public static long round(long numero);
+public static float round(float numero);
 
 ## 6. Inicilizadores
 
@@ -71,46 +100,65 @@ public class PruebaSleep {
 }
 ```
 En el programa anterior, ¿Cuál es la salida?
+Una cadena
+Números: 1 2 3
 ¿Cómo conseguimos que se imprima prueba?
+Cuando creemos un objeto de la clase PruebaSleep.
 
 ¿Cuantas veces se imprimirá en un programa "Una Cadena"?
-
+Una vez, ya que es cada vez que se ejecuta la clase.
 ¿Y "prueba"?
+Tantas veces como objetos de la clase PruebaSleep creemos.
 
 ## 7. Recolector
-
-
 ¿Para qué sirve System.gc()?
+Se usa para el reciclado de los objetos de la memoria y el optimizado de la misma.
 
 ¿Cuando se le llama?
+Cuando quieres liberar espacio en la memoria.
 
 ¿Qué nos asegura?
 
-## 8. Wrappers
 
+## 8. Wrappers
 ¿Qué son los Wrappers?
+Los Wrappers son las clases de los métodos primitivos.
 
 ¿Cuántos hay?
+Ocho
 
 ¿Para qué sirven?
+Para hacer listas de datos complejas como mapas, colas, grupos.
 
 ¿Qué constructores tienen?
+Byte (byte b)
+Short (short s)
+Int (int i)
+Float (float f)
+Long (long l)
+Double (double d)
+Char (char c)
+Boolean (boolean b)
 
 ¿Para qué sirven los métodos xxxValue()?
+Este metodo convierte un valor número recibido como parámetro a otro tipo valor primitivo.
 
 ¿Para qué sirven y en qué se diferencian los métodos parseXxx y valueOf()?
+La diferencia es que valueOf() nos devuelve un nuevo objeto del tipo que sea
+mientras que parseXxx nos devuelve un tipo primitivo.
 
 ¿Qué es Boxing y Autoboxing?
+Boxing: Es el proceso para encapsular un valor dentro de un objeto.
+Autoboxing: Es el proceso por el cual un tipo primitivo es encapsulado automáticamente
+en su wrapper de tipo equivalente cuando necesitamos un objeto de ese tipo.
 
 Haz un programa de ejemplo que tome un color CSS en hexadecimal (#45AB34 o #FFF, por ejemplo) y devuelva el color en RGB decimal: #FFF sería 255,255,255
 
 Supón que el color es siempre correcto (con seis o tres dígitos headecimales)
 
 ## 9. Concatenación de cadenas
-
-
 ¿Cómo hemos estado concatenado las cadenas durante el curso?
-
+Usando el operador '+'
 ¿Qué inconvenientes tiene ese método?
 
 Busca un ejemplo de concatenación de cadenas con StringBuffer y otro con StringBuilder
